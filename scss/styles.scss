@@ -50,7 +50,7 @@ p {
   .title-container {
     letter-spacing: 0.5rem;
     text-align: center;
-    font-size: 3rem;
+    font-size: 1.8rem;
     position: absolute;
     top: 250px;
     left: 50%;
@@ -102,9 +102,6 @@ p {
       color: hsl(232, 10%, 55%);
     }
   }
-}
-
-.navbarHover {
 }
 
 .navbar-highlight {
@@ -281,12 +278,20 @@ p {
       li {
         list-style: none;
         display: inline-block;
+        color: white;
 
         a {
           text-decoration: none;
           padding: 10px 20px;
+          border-radius: 2em;
+          color: white;
+
           &:hover {
-            background-color: black;
+            background-color: hsla(0, 0%, 100%, 0.3);
+          }
+          &:active {
+            background-color: white;
+            color: black;
           }
         }
       }

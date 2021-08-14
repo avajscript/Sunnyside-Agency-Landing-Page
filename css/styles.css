@@ -45,7 +45,7 @@ p {
 .navbar .title-container {
   letter-spacing: 0.5rem;
   text-align: center;
-  font-size: 3rem;
+  font-size: 1.8rem;
   position: absolute;
   top: 250px;
   left: 50%;
@@ -298,12 +298,19 @@ p {
   .desktop-nav ul li {
     list-style: none;
     display: inline-block;
+    color: white;
   }
   .desktop-nav ul li a {
     text-decoration: none;
     padding: 10px 20px;
+    border-radius: 2em;
+    color: white;
   }
   .desktop-nav ul li a:hover {
-    background-color: black;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  .desktop-nav ul li a:active {
+    background-color: white;
+    color: black;
   }
 }
