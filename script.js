@@ -2,6 +2,8 @@ window.onload = () => {
   // Elements
   const navbarLi = document.querySelectorAll(".dropdown li");
   const dropdown = document.querySelector(".dropdown");
+  
+
   // Functions
   function removeHighlights() {
     navbarLi.forEach((li) => {
@@ -19,12 +21,9 @@ window.onload = () => {
     );
   }
 
-  // Event listeners
-  navbarLi.forEach((li) => {
-    li.addEventListener("click", () => {
-      navbarHighlight(li);
-    });
-  });
+  function colorDesktopNavbar(navItem) {
+    navItem.classList.add('navbarHover');
+  }
 
   window.onclick = function (event) {
     if (
@@ -44,4 +43,13 @@ window.onload = () => {
       }
     }
   };
+
+  // Event listeners
+  navbarLi.forEach((li) => {
+    li.addEventListener("click", () => {
+      navbarHighlight(li);
+    });
+  });
+
+  
 };
