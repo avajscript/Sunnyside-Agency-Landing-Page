@@ -12,14 +12,8 @@ html {
 body {
   font-family: "Fraunces", sans-serif;
   font-size: 18px;
-  color: white;
   height: 100%;
   width: 100%;
-}
-
-.main {
-  width: 100%;
-  height: 100%;
 }
 
 p {
@@ -28,15 +22,24 @@ p {
 
 .nav-container {
   width: 100%;
-  background: url("../images/mobile/image-header.jpg") no-repeat;
-  background-size: 100%;
-  height: 700px;
-  padding: 20px;
+  color: white;
+  background: url("../images/mobile/image-header.jpg");
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.nav-container > img {
+  visibility: hidden;
+  width: 100%;
 }
 
 .navbar {
+  top: 0;
+  padding: 20px 5% 0;
+  position: absolute;
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
 .navbar h1 {
@@ -44,6 +47,7 @@ p {
 }
 
 .navbar img {
+  padding-top: 5px;
   height: 100%;
   cursor: pointer;
 }
@@ -65,7 +69,11 @@ p {
 .dropdown {
   background-color: white;
   margin-top: 3em;
-  position: relative;
+  position: absolute;
+  width: 100%;
+  top: 50px;
+  left: 5%;
+  width: 90%;
 }
 
 .dropdown ul {
@@ -91,9 +99,163 @@ p {
 }
 
 .top-grid {
+  text-align: center;
   width: 100%;
 }
 
-.top-image img {
+.top-grid img {
   width: 100%;
+  visibility: hidden;
+}
+
+.top-grid p {
+  color: #818498;
+  margin: 1.5rem 0;
+  line-height: 1.5rem;
+}
+
+.top-grid a {
+  color: black;
+  text-decoration: none;
+}
+
+.top-grid .image-1 {
+  background: url(../images/mobile/image-transform.jpg);
+  background-size: 100% 100%;
+}
+
+.top-grid .image-2 {
+  background: url(../images/mobile/image-stand-out.jpg);
+  background-size: 100% 100%;
+}
+
+.top-grid .learn-more {
+  display: inline-block;
+  position: relative;
+}
+
+.top-grid .yellow-line {
+  background-color: rgba(250, 212, 0, 0.4);
+  border-radius: 0.5em;
+  height: 7px;
+  position: relative;
+  width: 110%;
+  left: -5px;
+  top: -7px;
+}
+
+.top-grid .red-line {
+  background-color: rgba(254, 120, 103, 0.4);
+  border-radius: 0.5em;
+  height: 7px;
+  position: relative;
+  width: 110%;
+  left: -5px;
+  top: -7px;
+}
+
+.top-grid .top-article {
+  padding: 3rem 20px;
+}
+
+.top-grid .top-bg-article-one {
+  background: url(../images/mobile/image-graphic-design.jpg);
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.top-grid .bg-content {
+  position: absolute;
+  top: 60%;
+  color: #25564b;
+}
+
+.top-grid .bg-content p {
+  color: #25564b;
+  line-height: 2rem;
+}
+
+.top-grid .top-bg-article-two {
+  background: url(../images/mobile/image-photography.jpg);
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.testimonial-container {
+  text-align: center;
+  padding: 30px;
+}
+
+.testimonial-container .testimonial {
+  margin: 4rem 0;
+}
+
+.testimonial-container h1 {
+  color: #818498;
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  margin-top: 2.5rem;
+}
+
+.testimonial-container img {
+  border-radius: 5em;
+  width: 75px;
+}
+
+.testimonial-container p:nth-of-type(1) {
+  margin: 2rem 0;
+  line-height: 2rem;
+  color: #5a636c;
+}
+
+.testimonial-container p:nth-of-type(2) {
+  margin: 1rem 0;
+  color: #a7abae;
+}
+
+.testimonial-container h2 {
+  font-size: 1.3rem;
+}
+
+.bottom-image-wrapper img {
+  float: left;
+  width: 50%;
+}
+
+.bottom-image-wrapper::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.footer {
+  text-align: center;
+  color: #25564b;
+  background-color: #84d2c1;
+  padding: 3rem 2rem;
+}
+
+.footer .info-bar {
+  margin: 2.5rem 0 4rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer .info-bar a {
+  flex: 1;
+  text-decoration: none;
+  color: #458c7e;
+}
+
+.footer ul li {
+  list-style-type: none;
+  display: inline-block;
+  width: 40px;
+}
+
+.footer ul li a {
+  width: 100%;
+  flex: 1;
+  color: #25564b;
+  margin: 0 20px;
 }
