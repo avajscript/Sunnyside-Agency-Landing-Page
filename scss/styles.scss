@@ -287,6 +287,10 @@ p {
   }
 }
 
+.desktop-images-footer {
+  display: none;
+}
+
 @media screen and (min-width: 1052px) {
   // show desktop and hide mobile elements
   .desktop-header {
@@ -401,5 +405,12 @@ p {
     img {
       width: 25%;
     }
+  }
+  .mobile-images-footer {
+    display: none;
+  }
+
+  .desktop-images-footer {
+    display: block;
   }
 }

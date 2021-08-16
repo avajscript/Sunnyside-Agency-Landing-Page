@@ -309,6 +309,10 @@ p {
   display: none;
 }
 
+.desktop-images-footer {
+  display: none;
+}
+
 @media screen and (min-width: 1052px) {
   .desktop-header {
     display: block;
@@ -399,5 +403,11 @@ p {
   }
   .bottom-image-wrapper img {
     width: 25%;
+  }
+  .mobile-images-footer {
+    display: none;
+  }
+  .desktop-images-footer {
+    display: block;
   }
 }
