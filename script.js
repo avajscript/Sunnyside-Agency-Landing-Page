@@ -2,9 +2,22 @@ window.onload = () => {
   // Elements
   const navbarLi = document.querySelectorAll(".dropdown li");
   const dropdown = document.querySelector(".dropdown");
-  
+  const learnMore = document.querySelectorAll(".learn-more > a");
 
   // Functions
+  function hover(event) {
+    let learnMore = event.target.nextElementSibling;
+
+    if (event.type == "mouseover") {
+      learnMore.classList.contains("red-line")
+        ? (learnMore.style.backgroundColor = "hsla(7, 99%, 70%, .9)")
+        : (learnMore.style.backgroundColor = "hsla(51, 100%, 49%, 0.9)");
+    } else if (event.type == "mouseout") {
+      learnMore.classList.contains("red-line")
+        ? (learnMore.style.backgroundColor = "hsla(7, 99%, 70%, .2)")
+        : (learnMore.style.backgroundColor = "hsla(51, 100%, 49%, 0.2)");
+    }
+  }
   function removeHighlights() {
     navbarLi.forEach((li) => {
       li.firstChild.nextElementSibling.firstChild.classList.remove(
@@ -22,7 +35,7 @@ window.onload = () => {
   }
 
   function colorDesktopNavbar(navItem) {
-    navItem.classList.add('navbarHover');
+    navItem.classList.add("navbarHover");
   }
 
   window.onclick = function (event) {
@@ -51,5 +64,8 @@ window.onload = () => {
     });
   });
 
-  
+  learnMore.forEach((item) => {
+    item.addEventListener("mouseover", hover);
+    item.addEventListener("mouseout", hover);
+  });
 };

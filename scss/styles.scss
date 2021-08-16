@@ -5,6 +5,7 @@
   width: 110%;
   left: -5px;
   top: -8px;
+  z-index: -1;
 }
 
 @mixin desktop-image() {
@@ -150,11 +151,11 @@ p {
     position: relative;
   }
   .yellow-line {
-    background-color: hsla(51, 100%, 49%, 0.4);
+    background-color: hsla(51, 100%, 49%, 0.2);
     @include line-formula();
   }
   .red-line {
-    background-color: hsla(7, 99%, 70%, 0.4);
+    background-color: hsla(7, 99%, 70%, 0.2);
     @include line-formula();
   }
   .top-article {
@@ -352,11 +353,6 @@ p {
     flex-direction: row-reverse;
   }
 
-  .top-article {
-    flex: 1;
-    flex-basis: 50%;
-  }
-
   .image-1,
   .image-2 {
     display: none;
@@ -371,6 +367,15 @@ p {
       display: inline-block;
       flex: 1;
       flex-basis: 50%;
+    }
+    .top-article {
+      flex: 1;
+      flex-basis: 50%;
+
+      text-align: left;
+    }
+    .article-content {
+      padding: 15%;
     }
 
     .top-bg-article-two {

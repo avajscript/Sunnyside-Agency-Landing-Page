@@ -145,23 +145,25 @@ p {
 }
 
 .top-grid .yellow-line {
-  background-color: rgba(250, 212, 0, 0.4);
+  background-color: rgba(250, 212, 0, 0.2);
   border-radius: 0.5em;
   height: 10px;
   position: relative;
   width: 110%;
   left: -5px;
   top: -8px;
+  z-index: -1;
 }
 
 .top-grid .red-line {
-  background-color: rgba(254, 120, 103, 0.4);
+  background-color: rgba(254, 120, 103, 0.2);
   border-radius: 0.5em;
   height: 10px;
   position: relative;
   width: 110%;
   left: -5px;
   top: -8px;
+  z-index: -1;
 }
 
 .top-grid .top-article {
@@ -361,10 +363,6 @@ p {
   .row-reverse {
     flex-direction: row-reverse;
   }
-  .top-article {
-    flex: 1;
-    flex-basis: 50%;
-  }
   .image-1,
   .image-2 {
     display: none;
@@ -377,6 +375,14 @@ p {
     display: inline-block;
     flex: 1;
     flex-basis: 50%;
+  }
+  .top-grid .top-article {
+    flex: 1;
+    flex-basis: 50%;
+    text-align: left;
+  }
+  .top-grid .article-content {
+    padding: 15%;
   }
   .top-grid .top-bg-article-two {
     background: none;
