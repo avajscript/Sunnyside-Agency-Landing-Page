@@ -31,6 +31,7 @@ body {
   font-size: 18px;
   height: 100%;
   width: 100%;
+  background-color: #fffbf8;
 }
 
 p {
@@ -382,8 +383,10 @@ p {
     .top-article {
       flex: 1;
       flex-basis: 50%;
-
       text-align: left;
+      h1 {
+        font-size: 2.5rem;
+      }
     }
     .article-content {
       padding: 15%;
