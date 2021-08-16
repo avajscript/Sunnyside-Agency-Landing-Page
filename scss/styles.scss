@@ -65,6 +65,10 @@ p {
     top: 250px;
     left: 50%;
     transform: translate(-50%, -50%);
+    img {
+      position: absolute;
+      top: 200px;
+    }
   }
 
   h1 {
@@ -308,6 +312,13 @@ p {
   .navbar {
     img {
       display: none;
+    }
+    .title-container {
+      img {
+        display: inline-block;
+        width: 43.25px;
+        height: auto;
+      }
     }
   }
 

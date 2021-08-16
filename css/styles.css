@@ -52,6 +52,11 @@ p {
   transform: translate(-50%, -50%);
 }
 
+.navbar .title-container img {
+  position: absolute;
+  top: 200px;
+}
+
 .navbar h1 {
   flex: 1;
 }
@@ -328,6 +333,11 @@ p {
   }
   .navbar img {
     display: none;
+  }
+  .navbar .title-container img {
+    display: inline-block;
+    width: 43.25px;
+    height: auto;
   }
   .desktop-nav {
     display: inline-block;
